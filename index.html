@@ -1,0 +1,513 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="#535353" name="theme-color"/>
+<meta content="https://img.itch.zone/aW1nLzUzNzA0NzAuZ2lm/original/Y5RQWp.gif" property="og:image"/>
+<link href="https://img.itch.zone/aW1nLzE2MTI1NjA2LnBuZw==/32x32%23/3Xakvy.png" rel="icon" type="image/png"/>
+<meta content="itch.io" property="og:site_name"/>
+<meta content="4503599627724030" property="twitter:account_id"/>
+<meta content='"Modern" and "Retro" mixed FPS' property="og:description"/>
+<meta content='"Modern" and "Retro" mixed FPS' name="description"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<meta content="games/887288" name="itch:path"/>
+<link href="https://latel88.itch.io/vrg/devlog.rss" rel="alternate" title="V.R.G. campaign demo Devlog" type="application/rss+xml"/>
+<meta content="@itchio" name="twitter:site"/>
+<meta content="V.R.G. campaign demo by latel88" name="twitter:title"/>
+<meta content='"Modern" and "Retro" mixed FPS. Play in your browser' name="twitter:description"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="https://img.itch.zone/aW1nLzUzNzA0NzAuZ2lm/508x254%23mb/yLcKnu.gif" property="twitter:image"/>
+<meta content="https://latel88.itch.io/vrg" name="twitter:url"/>
+<script type="application/ld+json">
+            {
+                "@type": "BreadcrumbList",
+                "@context": "http:\/\/schema.org",
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "item": {
+                            "@id": "https:\/\/itch.io\/games",
+                            "name": "Games"
+                        },
+                        "position": 1
+                    },
+                    {
+                        "@type": "ListItem",
+                        "item": {
+                            "@id": "https:\/\/itch.io\/games\/genre-shooter",
+                            "name": "Shooter"
+                        },
+                        "position": 2
+                    },
+                    {
+                        "@type": "ListItem",
+                        "item": {
+                            "@id": "https:\/\/itch.io\/games\/free",
+                            "name": "Free"
+                        },
+                        "position": 3
+                    }
+                ]
+            }</script>
+<script type="application/ld+json">
+            {
+                "@type": "Product",
+                "name": "V.R.G. campaign demo",
+                "@context": "http:\/\/schema.org\/",
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "4.5",
+                    "ratingCount": 83
+                },
+                "description": "\"Modern\" and \"Retro\" mixed FPS"
+            }</script>
+<title>V.R.G. campaign demo by latel88</title>
+<meta name="csrf_token" value="WyJoUW41IiwxNzM0MTAyMjMxLCJLbEh2ZFQ0M2p5RVR2Y3YiXQ==.Rm0ICDSA7oguyIbJP5w9ScXUbCY="/>
+<link href="https://static.itch.io/game.css?1734055025" rel="stylesheet"/>
+<script type="text/javascript">
+            window.itchio_translations_url = 'https://static.itch.io/translations';
+        </script>
+<script src="https://static.itch.io/lib.min.js?1734055025" type="text/javascript"></script>
+<script src="https://static.itch.io/bundle.min.js?1734055025" type="text/javascript"></script>
+<script src="https://static.itch.io/lib/jquery.maskMoney.js" type="text/javascript"></script>
+<script data-src="https://static.itch.io/react.min.js?1734055025" id="lib_react_src"></script>
+<script src="https://static.itch.io/game.min.js?1734055025" type="text/javascript"></script>
+<script type="text/javascript">
+            I.current_user = null;
+            I.subdomain = true;
+            I.coep_set = true;
+        </script>
+<script type="text/javascript">
+            if (!window.location.hostname.match(/localhost/)) {
+                window.dataLayer = window.dataLayer || [];
+                function gtag() {
+                    dataLayer.push(arguments);
+                }
+                gtag('js', new Date());
+                gtag('config', "G-36R7NPBMLS", {});
+                (function(d, t, s, m) {
+                    s = d.createElement(t);
+                    s.src = "https:\/\/www.googletagmanager.com\/gtag\/js?id=G-36R7NPBMLS";
+                    s.async = 1;
+                    m = d.getElementsByTagName(t)[0];
+                    m.parentNode.insertBefore(s, m);
+                }
+                )(document, "script");
+            }
+        </script>
+<style id="game_theme" type="text/css">
+            :root {
+                --itchio_ui_bg: #393939;
+                --itchio_ui_bg_dark: #333333
+            }
+
+            .wrapper {
+                --itchio_font_family: Lato;
+                --itchio_bg_color: #535353;
+                --itchio_bg2_color: rgba(0, 0, 0, 1);
+                --itchio_bg2_sub: #191919;
+                --itchio_text_color: #ffffff;
+                --itchio_link_color: #fa5994;
+                --itchio_border_color: #262626;
+                --itchio_button_color: #fa5994;
+                --itchio_button_fg_color: #ffffff;
+                --itchio_button_shadow_color: #e4437e;
+                background-color: #535353;
+                /*! */
+                /* */
+            }
+
+            .inner_column {
+                color: #ffffff;
+                font-family: Lato,Lato,LatoExtended,sans-serif;
+                background-color: rgba(0, 0, 0, 1)
+            }
+
+            .inner_column ::selection {
+                color: #ffffff;
+                background: #fa5994
+            }
+
+            .inner_column ::-moz-selection {
+                color: #ffffff;
+                background: #fa5994
+            }
+
+            .inner_column h1,.inner_column h2,.inner_column h3,.inner_column h4,.inner_column h5,.inner_column h6 {
+                font-family: inherit;
+                font-weight: 900;
+                color: inherit
+            }
+
+            .inner_column a,.inner_column .footer a {
+                color: #fa5994
+            }
+
+            .inner_column .button,.inner_column .button:hover,.inner_column .button:active {
+                background-color: #fa5994;
+                color: #ffffff;
+                text-shadow: 0 1px 0px #e4437e
+            }
+
+            .inner_column hr {
+                background-color: #262626
+            }
+
+            .inner_column table {
+                border-color: #262626
+            }
+
+            .inner_column .redactor-box .redactor-toolbar li a {
+                color: #fa5994
+            }
+
+            .inner_column .redactor-box .redactor-toolbar li a:hover,.inner_column .redactor-box .redactor-toolbar li a:active,.inner_column .redactor-box .redactor-toolbar li a.redactor-act {
+                background-color: #fa5994 !important;
+                color: #ffffff !important;
+                text-shadow: 0 1px 0px #e4437e !important
+            }
+
+            .inner_column .redactor-box .redactor-toolbar .re-button-tooltip {
+                text-shadow: none
+            }
+
+            .game_frame {
+                background: #191919;
+                /*! */
+                /* */
+            }
+
+            .game_frame .embed_info {
+                background-color: rgba(0, 0, 0, 0.85)
+            }
+
+            .game_loading .loader_bar .loader_bar_slider {
+                background-color: #fa5994
+            }
+
+            .view_game_page .reward_row,.view_game_page .bundle_row {
+                border-color: #191919 !important
+            }
+
+            .view_game_page .game_info_panel_widget {
+                background: rgba(25, 25, 25, 1)
+            }
+
+            .view_game_page .star_value .star_fill {
+                color: #fa5994
+            }
+
+            .view_game_page .rewards .quantity_input {
+                background: rgba(25, 25, 25, 1);
+                border-color: rgba(255, 255, 255, 0.5);
+                color: #ffffff
+            }
+
+            .view_game_page .right_col {
+                display: block
+            }
+
+            .game_devlog_page li .meta_row .post_likes {
+                border-color: #191919
+            }
+
+            .game_devlog_post_page .post_like_button {
+                box-shadow: inset 0 0 0 1px #262626
+            }
+
+            .game_comments_widget .community_post .post_footer a,.game_comments_widget .community_post .post_footer .vote_btn,.game_comments_widget .community_post .post_header .post_date a,.game_comments_widget .community_post .post_header .edit_message {
+                color: rgba(255, 255, 255, 0.5)
+            }
+
+            .game_comments_widget .community_post .reveal_full_post_btn {
+                background: linear-gradient(to bottom, transparent, #000000 50%, #000000);
+                color: #fa5994
+            }
+
+            .game_comments_widget .community_post .post_votes {
+                border-color: rgba(255, 255, 255, 0.2)
+            }
+
+            .game_comments_widget .community_post .post_votes .vote_btn:hover {
+                background: rgba(255, 255, 255, 0.05)
+            }
+
+            .game_comments_widget .community_post .post_footer .vote_btn {
+                border-color: rgba(255, 255, 255, 0.5)
+            }
+
+            .game_comments_widget .community_post .post_footer .vote_btn span {
+                color: inherit
+            }
+
+            .game_comments_widget .community_post .post_footer .vote_btn:hover,.game_comments_widget .community_post .post_footer .vote_btn.voted {
+                background-color: #fa5994;
+                color: #ffffff;
+                text-shadow: 0 1px 0px #e4437e;
+                border-color: #fa5994
+            }
+
+            .game_comments_widget .form .redactor-box,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget {
+                border-color: rgba(255, 255, 255, 0.5);
+                background: transparent
+            }
+
+            .game_comments_widget .form .redactor-layer,.game_comments_widget .form .redactor-toolbar,.game_comments_widget .form .click_input,.game_comments_widget .form .forms_markdown_input_widget {
+                background: rgba(25, 25, 25, 1)
+            }
+
+            .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button {
+                color: inherit;
+                opacity: 0.6
+            }
+
+            .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:hover,.game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar button:active {
+                opacity: 1;
+                background-color: #fa5994 !important;
+                color: #ffffff !important;
+                text-shadow: 0 1px 0px #e4437e !important
+            }
+
+            .game_comments_widget .form .forms_markdown_input_widget .markdown_toolbar,.game_comments_widget .form .forms_markdown_input_widget li {
+                border-color: rgba(255, 255, 255, 0.5)
+            }
+
+            .game_comments_widget .form textarea {
+                border-color: rgba(255, 255, 255, 0.5);
+                background: rgba(25, 25, 25, 1);
+                color: inherit
+            }
+
+            .game_comments_widget .form .redactor-toolbar {
+                border-color: rgba(255, 255, 255, 0.5)
+            }
+
+            .game_comments_widget .hint {
+                color: rgba(255, 255, 255, 0.5)
+            }
+
+            .game_community_preview_widget .community_topic_row .topic_tag {
+                background-color: #191919
+            }
+
+            .footer .svgicon,.view_game_page .more_information_toggle .svgicon {
+                fill: #ffffff !important
+            }
+        </style>
+</head>
+<body class="embedded_game locale_en game_layout_widget layout_widget no_theme_toggle responsive" data-host="itch.io" data-page_name="view_game">
+<script type="text/javascript">
+            new I.GameUserTools('#user_tools')
+        </script>
+<div class="main wrapper" id="wrapper">
+<div class="inner_column size_large family_lato" id="inner_column">
+<div class="header has_image align_center" id="header">
+<img alt="V.R.G. campaign demo" src="https://img.itch.zone/aW1nLzY1MzM2NTYucG5n/original/pHW%2FMT.png"/>
+<h1 class="game_title" itemprop="name">V.R.G. campaign demo</h1>
+</div>
+<div class="view_html_game_page view_game_page page_widget base_widget direct_download ready" id="view_html_game_2616835">
+<div class="html_embed_widget base_widget embed_wrapper" id="html_embed_389214">
+<div class="game_frame game_pending" data-height="360" data-width="640" style="width: 640px; height: 360px">
+<button class="fullscreen_btn" title="Enter fullscreen">
+<img src="https://itch.io/static/images/enlarge.svg?1734055025"/>
+</button>
+<div class="iframe_placeholder" data-iframe='&lt;iframe allow="autoplay; fullscreen *; geolocation; microphone; camera; midi; monetization; xr-spatial-tracking; gamepad; gyroscope; accelerometer; xr; cross-origin-isolated; web-share" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" msallowfullscreen="true" id="game_drop" src="https://html.itch.zone/html/12243564/index.html" scrolling="no" frameborder="0" allowfullscreen="true"&gt;&lt;/iframe&gt;'>
+<button class="button load_iframe_btn">
+<svg aria-hidden="" class="svgicon icon_play" fill="none" height="24" role="img" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" version="1.1" viewbox="0 0 24 24" width="24">
+<circle cx="12" cy="12" r="10"></circle>
+<polygon points="10 8 16 12 10 16 10 8"></polygon>
+</svg>
+                                    Run VRG campaign demo
+                                </button>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="left_col column">
+<div class="formatted_description user_formatted">
+<p></p>
+<h2>
+<a href="https://pump.fun/board">Game Description ✘ PUMP</a>
+</h2>
+<p></p>
+<p>VRG is an FPS that combines a modern shooter and a retro shooter. You can carry 6 types of weapons and gadgets and switch between them with the weapon key or the weapon wheel with slow motion. Includes modern operating mechanics for sprints, tactical sprints, wall runs, leans, and sliding (no ADS, reloads, double jumps), but the game progresses in an episode format like classic FPS, with no story. There are 5 levels and 1 secret level for each episode.</p>
+<p>
+<br/>
+</p>
+<ul>
+<li>
+<strong>Combos you earn, more classic controls become.</strong>
+</li>
+</ul>
+<div>
+<div></div>
+<table>
+<tbody>
+<tr>
+<td style="width:175px">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzUzMDg5ODEuZ2lm/original/E4T3Uc.gif" style="max-width: 100%; font-size: 14px; background-color: rgb(17, 17, 17)"/>
+</td>
+<td>A combo system that raises the rank by defeating enemies in a row is implemented. There are 7 ranks, and the higher the rank, the more the reticle contracts, the recoil decreases, the classic like movement speed , and it approaches the classic operation mode. However, the higher the rank, the greater the rate of decrease of the combo gauge and the more difficult it is to maintain the buff. The highest rank "SSS "will be in slow motion and the gauge will decrease slowly.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+<br/>
+</p>
+<ul>
+<li>
+<strong>The means of recovery is a enemy gib</strong>
+</li>
+</ul>
+<table>
+<tbody>
+<tr>
+<td>
+                                                You can recover your health and combo gauge by eating the gib that scatter when you defeat the enemy. The more combo ranks you earn, the more gib you have, and the more you move forward, the more opportunities you have for recovery and combo maintenance. You can earn points for the amount of meat you eat, and you can use weapons and ammunition.<br/>
+</td>
+<td style="width:175px">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzU5NTY4MTQuZ2lm/original/4Nx6yw.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+<p>
+<span></span>
+</p>
+<p>
+<strong>
+<br/>
+</strong>
+</p>
+<ul>
+<li>
+<strong>Dual wild that can be freely combined</strong>
+</li>
+</ul>
+<div>
+<table>
+<tbody>
+<tr>
+<td style="width:175px">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzUzMDkwNTQuZ2lm/original/T3T1Zk.gif" style="max-width: 100%; background-color: rgb(17, 17, 17); font-size: 14px"/>
+</td>
+<td>The easy-to-use dual wild system allows you to instantly switch between two-handed weapons (separate combinations are possible). Simply hold down the weapon key or select the weapon on the weapon wheel and click the mouse corresponding to your arm.</td>
+</tr>
+</tbody>
+</table>
+<br/>
+</div>
+<ul>
+<li>
+<strong>Custom engine with raycasting rendering</strong>
+</li>
+</ul>
+<div>
+<table>
+<tbody>
+<tr>
+<td>
+                                                    The custom engine used in VRG draws everything from voxels, billboards, shadows, bumps and reflections with GPU-based raycasting, and all textures are made with 64x64 pixels without translucency. .. (UI not included) This is a respect for FPS in the Wolfesntein 3D era, and an experiment on how much it can be expressed by ray casting.<br/>
+</td>
+<td style="width:175px">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzUzMDg5MTIuZ2lm/original/PoCYf%2B.gif"/>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>
+<strong>
+<br/>
+</strong>
+</p>
+<ul>
+<li>
+<strong>Other Futures</strong>
+</li>
+</ul>
+<ol>
+<li>
+                                        Abundant weapons (there are 17 types in total. The same types will be replaced)<span></span>
+<span></span>
+</li>
+<li>a store where you can accumulate points based on the amount of meat you eat (which is maintained even when you die) and shop with the points</li>
+<li>gameplay options (perma-death, weapon loss on death, slow motion off for speedruns)</li>
+<li>
+                                        retro CRT filter
+<span></span>
+</li>
+</ol>
+<p>
+<br/>
+</p>
+<ul>
+<li>
+<strong>Control Mouse&amp;Keyboard</strong>
+</li>
+</ul>
+<div style="width:100%">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzExNjcyMDEzLnBuZw==/original/joVcHb.png"/>
+</div>
+<p>
+<br/>
+</p>
+<ul>
+<li>
+<strong>Control Gamepad</strong>
+</li>
+</ul>
+<div style="width:100%">
+<img loading="lazy" src="https://img.itch.zone/aW1nLzExNjcyMTk3LnBuZw==/original/iO0Bby.png"/>
+</div>
+</div>
+<div class="uploads">
+
+
+</div>
+
+
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+<script type="text/javascript">
+            I.setup_layout()
+        </script>
+<script id="loading_lightbox_tpl" type="text/template">
+            <div aria-live="polite" class="lightbox loading_lightbox"><div class="loader_outer"><div class="loader_label">Loading</div><div class="loader_bar"><div class="loader_bar_slider"></div></div></div></div>
+        </script>
+<script type="text/javascript">
+            init_HtmlEmbed('#html_embed_389214', {
+                "width": 640,
+                "height": 360,
+                "start_maximized": false,
+                "popup_url": "https:\/\/itch.io\/embed-upload\/12243564?color=333333&uuid=364942119da3574d71bb48b90a7645c8"
+            });
+            new I.CommunityViewTopic('#community_topic_posts_7115862',{
+                "report_url": "https:\/\/itch.io\/post\/:post_id\/report"
+            });
+            init_ViewHtmlGame('#view_html_game_2616835', {
+                "game": {
+                    "play_url": "https:\/\/latel88.itch.io\/vrg\/rp\/eyJpZCI6ODg3Mjg4LCJtIjoxNzM0MTAyNTU4LCJybiI6MjYzMDQsImUiOjE3MzQxMDI2MTh9%2ezi1zuh1h%2fedKfWtzhg7kMOxS9io%3d",
+                    "play_after": 90,
+                    "min_price": 0,
+                    "actual_price": 0,
+                    "id": 887288,
+                    "type_name": "html",
+                    "slug": "vrg",
+                    "type": 5,
+                    "hit_url": "https:\/\/latel88.itch.io\/vrg\/rh\/eyJlIjoxNzM0MTAyNDgzLCJpZCI6ODg3Mjg4LCJyIjoiaHR0cHM6XC9cL2l0Y2guaW9cL2dhbWVzXC9wbGF0Zm9ybS1tb2JpbGUtd2ViXC90YWctZmlyc3QtcGVyc29uIn0%3d%2edak5zyHMy2ZLuJnGUQO2O2Q3Zqk%3d"
+                },
+                "generate_download_url": "https:\/\/latel88.itch.io\/vrg\/download_url"
+            });
+            I.setup_page();
+        </script>
+</body>
+</html>
